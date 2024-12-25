@@ -1,0 +1,50 @@
+# Fichiers temporaires de R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+
+# Dossiers temporaires
+.Rproj.user/
+
+# Dossiers de bibliothèques locales
+.Rlibs/
+
+# Fichiers créés par RStudio
+*.Rproj
+*.Rproj.user/
+
+# Fichiers générés par des outils externes (par exemple, Rcpp)
+*.o
+*.so
+*.dll
+
+# Fichiers de log
+*.log
+
+# Dossiers de sortie d'analyses (par exemple, rapports, graphiques)
+output/
+figures/
+
+# RMarkdown (fichiers générés)
+*.html
+*.pdf
+*.docx
+
+# Fichiers de cache
+*.cache
+
+# Cache de packrat (si vous utilisez Packrat pour la gestion des dépendances)
+packrat/
+
+# Renviron et autres fichiers de configuration locaux
+Renviron
+*.Rprofile
+
+# Fichiers de test et de débogage
+*.Rcheck/
+
+/data
+
+/database
+
