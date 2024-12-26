@@ -70,12 +70,9 @@ repertoire <- "/home/tsiory/Documents/cours_1è_année_ingenieur/stat_data/data/
 
 fichiers <- list.files(path = repertoire, full.names = TRUE, pattern = "\\.pdf$")
 
-
 resultats <- lapply(fichiers, extract_transform)
 
-
 df_final <- bind_rows(resultats, .id = "Fichier")
-
 
 df_final$Fichier <- NULL
 
@@ -83,10 +80,9 @@ df_final <- unique(df_final)
 
 df_final$Region <- gsub("région", "", df_final$Region, ignore.case = TRUE)
 
-
 View(df_final)
 
-
 write.csv(df_final_3, "/home/tsiory/Documents/cours_1è_année_ingenieur/stat_data/data/database/resultats_final_page4.csv", row.names = FALSE)
+
 
 
